@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* 属性名， 属性名=属性值（正则）
+        =绝对等于
+        *=包含这个元素
+        ^= 以这个开头
+        $= 以这个结尾
+         */
+        /**存在id属性的元素**/
+       /** a[id]{
+            background: #dd8520;
+        }
+        a[id=second]{
+            background: coral;
+        }
+        a[class*=link]{
+            background: brown;
+        }**/
+        /**a[href^=https]{
+           background: blue;
+        }
+        a[href$=html]{
+            background: steelblue;
+        }**/
+
+
+
+        .demo a{
+            float: left;
+            display: block;
+            height: 30px;
+            width: 30px;
+            border-radius: 10px;
+            background: #2700ff;
+            text-align: center;
+            color: #ff9a9e;
+            text-decoration: none;
+            margin: 30px auto;
+            font:bold 20px Arial;
+
+        }
+    </style>
+</head>
+<body>
+<p class="demo">
+    <a href="https://www.baidu.com" class="link item first" id="first">1</a>
+    <a href="https://www.douyu.com" class="link item active" target="_blank"title="斗鱼">2</a>
+    <a href="id选择器.html" class="item">3</a>
+    <a href="标签选择器.html" class="item">4</a>
+    <a href="结构伪类选择器.html" class="item">5</a>
+    <a href="abc" id="second">6</a>
+</p>
+</body>
+</html>

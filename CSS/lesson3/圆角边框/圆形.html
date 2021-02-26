@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+
+            display: block;
+            border-radius: 50px;
+            padding: 15px 15px;
+
+        }
+
+        div:nth-of-type(2){
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            float: left;
+            background: #dd8520;
+            border-radius: 50px 0 0 0;
+        }
+        /*
+        取消缝隙，float：left；
+         */
+        div:nth-of-type(3){
+            display: inline-block;
+            width:50px;
+            height: 50px;
+            float: left;
+            background: #dd8520;
+            border-radius: 0  50px 0 0 ;
+        }
+
+    </style>
+</head>
+<body>
+<div style=" width:80px; height: 80px;  background: #ff9a9e; border-radius: 50%">
+    <img src="../images/tx.jpg" alt="图片">
+</div>
+
+<div></div>
+<div></div>
+</body>
+</html>
