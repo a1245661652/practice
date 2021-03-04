@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*
+        相对定位
+        相对自己原来的位置 进行偏移
+        */
+        html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input{ margin:0; padding:0; }
+        fieldset, img,input,button { border:0 none; padding:0;margin:0;outline-style:none; }   /*去掉input等聚焦时的蓝色边框*/
+        ul,li,ol{ list-style:none; }
+
+
+        div{
+            margin: 100px;
+            font-size:10px;
+            line-height: 50px;
+
+        }
+        #father{
+            border: #fad0c4 2px dashed;
+            position: relative;/*如果没有已经定位的祖先元素，会以浏览器窗口为基准进行定位*/
+        }
+        #first{
+            background-color: #dd8520;
+            border: #dd8520 1px solid;
+        }
+        #second{
+            background-color: #ffd500;
+            border: #ffd500 1px solid;
+            position: absolute;
+            top:-100px;
+        }
+        #third{
+            background-color: #4da3a3;
+            border: #4da3a3 1px solid;
+        }
+    </style>
+
+</head>
+<body>
+<div id="father">
+    <div id="first">first</div>
+    <div id="second">second</div>
+    <div id="third">third</div>
+</div>
+
+
+
+
+
+</body>
+</html>
